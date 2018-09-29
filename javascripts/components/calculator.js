@@ -19,7 +19,28 @@ const calculate = (num1, num2, mathType) => {
         default:
             'nope';
     }
- printToDom(answer, 'result');
+ setDisplay(answer); //now you don't need a ptd because you made a function below that does it for you.
 };
 
-export {calculate};
+const setDisplay = (someNumber) => {
+    calc.display = someNumber;
+    printToDom(calc.display, 'result');
+}
+const initialDisplay = () => {
+    printToDom(0, 'result');
+}
+
+
+const addNumber = (num) => { //passing num when we are calling addNumber
+    if (calc.mathType === '') {
+        calc.firstNumber += num; 
+        setDisplay(calc.firstNumber);
+    } else {
+        calc.secondNumber += num;
+        setDisplay(calc.secondNumber);
+    }
+};
+
+
+
+export {calculate, addNumber, initialDisplay};

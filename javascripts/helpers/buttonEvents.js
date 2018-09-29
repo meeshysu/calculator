@@ -1,13 +1,36 @@
-const sevenButton = document.getElementById('sevenButton');
+import {addNumber} from '../components/calculator.js'
 
-const sevenButtonEvent = ( ) => {
-    sevenButton.addEventListener('click', () => {
-        console.log('you clicked 7');
-    })
-};
-
-const buttonEvents = () => {
-    sevenButtonEvent();
+// object
+const calc = {
+    firstNumber: '',
+    secondNumber: '',
+    mathType: '',
+    display: '', //inner html is going to return a string, we want a space in between the paranthensis. 
 }
 
-export {sevenButtonEvent};
+const sevenButton = document.getElementById('sevenButton');
+const eightButton = document.getElementById('eightButton');
+
+const addNumberCaller = (e) => {
+    addNumber(e.target.innerHTML);
+};
+
+const sevenButtonEvent = ( ) => {
+    sevenButton.addEventListener('click', addNumberCaller)
+};
+
+const eightButtonEvent = ( ) => {
+    eightButton.addEventListener('click', addNumberCaller)
+};
+
+// const nineButtonEvent = ( ) => {
+//     nineButton.addEventListener('click', addNumberCaller)
+// };
+
+const attachEvents = () => {
+    sevenButtonEvent();
+    eightButtonEvent();
+    // nineButtonEvent();
+}
+
+export default attachEvents;
