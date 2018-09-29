@@ -1,5 +1,5 @@
 import {printToDom} from '../helpers/util.js';
-import {multiply} from '../helpers/maths.js';
+import {add, divide, multiply, subtract} from '../helpers/maths.js';
 
 const calculate = (num1, num2, mathType) => {
     let answer = 0;
