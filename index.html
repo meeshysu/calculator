@@ -11,8 +11,15 @@
 </head>
 
 <body>
-    <div id="result"></div>
-
+    <div class="calculator col-4 offset-md-4"> <!--offset just moves the div over-->
+        <div class="row"></div>
+        <div id="result"></div>
+    
+        
+        <div class="row">
+            <button type="button" class="btn btn-info" id="sevenButton">7</button>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -23,6 +30,7 @@
         crossorigin="anonymous"></script>
     <script src="./javascripts/helpers/maths.js" type="module"></script>
     <script src="./javascripts/helpers/util.js" type="module"></script>
+    <script src="./javascripts/helpers/buttonEvents.js" type="module"></script>
     <script src="./javascripts/components/calculator.js" type="module"></script>
     <script src="./javascripts/main.js" type="module"></script>
 </body>
