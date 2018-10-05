@@ -6,71 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Calculator</title>
 </head>
 
 <body>
+        <div id="header"><img src="CalcBanner.png"></div>
+
     <div class="calculator col-4 offset-md-4">
         <!--offset just moves the div over-->
         <div class="row"></div>
-        <div id="result"></div>
+        <div id="result" class="m-5"></div>
 
+        
 
-        <div class="row">
+        <div class="row m-3">
             <div class="col">
-                <button type="button" class="col btn btn-info" id="sevenButton">7</button>
+                <button type="button" class="col btn btn" id="sevenButton">7</button>
             </div>
             <div class="col">
-                <button type="button" class="col btn btn-info" id="eightButton">8</button>
+                <button type="button" class="col btn btn" id="eightButton">8</button>
             </div>
             <div class="col">
-                <button type="button" class="col btn btn-info" id="nineButton">9</button>
+                <button type="button" class="col btn btn" id="nineButton">9</button>
             </div>
             <div class="col">
-                <button type="button" class="col btn btn-primary" id="divideButton">/</button>
+                <button type="button" class="col btn btn" id="divideButton">/</button>
             </div>
 
         </div>
-        <div class="row">
+        <div class="row m-3">
             <div class="col">
-                <button type="button" class="btn btn-info" id="fourButton">4</button>
+                <button type="button" class="col btn btn" id="fourButton">4</button>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-info" id="fiveButton">5</button>
+                <button type="button" class="col btn btn" id="fiveButton">5</button>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-info" id="sixButton">6</button>
+                <button type="button" class="col btn btn" id="sixButton">6</button>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-info" id="multiplyButton">*</button>
+                <button type="button" class="col btn btn" id="multiplyButton">*</button>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row m-3">
                 <div class="col">
-                    <button type="button" class="btn btn-info" id="oneButton">1</button>
+                    <button type="button" class="col btn btn" id="oneButton">1</button>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-info" id="twoButton">2</button>
+                    <button type="button" class="col btn btn" id="twoButton">2</button>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-info" id="threeButton">3</button>
+                    <button type="button" class="col btn btn" id="threeButton">3</button>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-info" id="subtractButton">-</button>
+                    <button type="button" class="col btn btn" id="subtractButton">-</button>
                 </div>
             </div>
 
-        <div class="row">
+        <div class="row m-3">
             <div class="col">
-                <button type="button" class="col btn btn-primary" id="zeroButton">0</button>
+                <button type="button" class="col btn btn" id="zeroButton">0</button>
             </div>
             <div class="col-6">
-                <button type="button" class="col btn btn-primary" id="equalButton">=</button>
+                <button type="button" class="col btn btn" id="equalButton">=</button>
             </div>
             <div class="col">
-                <button type="button" class="col btn btn-primary" id="plusButton">+</button>
+                <button type="button" class="col btn btn" id="plusButton">+</button>
             </div>
         </div>
     </div>
