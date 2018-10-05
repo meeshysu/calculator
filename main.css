@@ -1,3 +1,41 @@
 body {
-    background-color: azure;
+    background-image: url("Galaxy.jpg");
+}
+
+#sevenButton, #eightButton, #nineButton {
+    background-color: #f44336;
+}
+
+#divideButton, #multiplyButton, #subtractButton {
+    background-color: #fff59d;
+    
+}
+
+#fourButton, #fiveButton, #sixButton {
+    background-color: #ff5722;
+    color: black;
+}
+
+#oneButton, #twoButton, #threeButton {
+    background-color: #ff8a65;
+}
+
+#zeroButton, #equalButton, #plusButton {
+    background-color: #fff59d;
+    color: black;
+}
+
+#result {
+    color: #b1bace;
+}
+
+#header {
+    padding-top: 5%;
+    padding-left: 25%;
+    margin: auto;
+    display: block;
+}
+
+#calcSpace {
+    padding-bottom: 40%;
 }
